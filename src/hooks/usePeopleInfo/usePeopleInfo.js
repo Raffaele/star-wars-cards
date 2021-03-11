@@ -1,9 +1,7 @@
 import React from 'react';
-// import hooksService from '../hooksService';
 import apiInfoManager from '../../engine/apiInfoManager/apiInfoManager';
 
 export function usePeopleInfo() {
-    // const {useEffect, useState} = hooksService.getReactHooks();
     const {useEffect, useState} = React;
     const [people, setPeople] = useState([]);
     

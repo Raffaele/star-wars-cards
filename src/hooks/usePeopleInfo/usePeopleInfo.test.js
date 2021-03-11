@@ -54,10 +54,6 @@ describe('usePeopleInfo', () => {
         apiInfoManager.getCharactersInfo.mockResolvedValue(characters);
         apiInfoManager.getPlanetsInfo.mockResolvedValue(planets);
         apiInfoManager.getFilmsInfo.mockResolvedValue(films);
-        // hooksService.getReactHooks.mockReturnValue({
-        //     useState: jest.fn().mockReturnValue([]),
-        //     useEffect: jest.fn().mockReturnValue([])
-        // });
         await act(async () => renderHook(() => {
             result = usePeopleInfo();
         }))
